@@ -3,12 +3,12 @@ body{
 	font-size: 150%;
 	margin:40px;
 	text-align: center;
-	background-image: url(bg.png);
+	background-image: url(bg.jpg);
 	background-position: 0% 0%;
 	background-size: 20%;
 	/*background-size: cover;*/
 	min-height: 100vh; /*ทำให้เวลาทำพื้นหลังแล้วมันสูงเต็มหน้าจอ*/
-	animation: bg 40s infinite linear;
+	animation: bg 30s infinite linear;
 }
 @keyframes bg{
 	from{background-position: 0% 0%}
@@ -24,28 +24,28 @@ body{
 @keyframes shadow{
 	from{
 		text-shadow:
-		-1px -1px 0px #f6b7aa,
-		1px -1px 0px #f6b7aa,
-		-1px 1px 0px #f6b7aa,
-		1px 1px 0px #f6b7aa,
-		1px 2px 0px #f6b7aa,
-		2px 3px 0px #f6b7aa,
-		3px 4px 0px #f6b7aa,
-		4px 5px 0px #f6b7aa,
-		5px 6px 0px #f6b7aa,
-		6px 7px 0px #f6b7aa
+		-1px -1px 0px #000000,
+		1px -1px 0px #000000,
+		-1px 1px 0px #000000,
+		1px 1px 0px #000000,
+		1px 2px 0px #000000,
+		2px 3px 0px #000000,
+		3px 4px 0px #000000,
+		4px 5px 0px #000000,
+		5px 6px 0px #000000,
+		6px 7px 0px #000000
 		;
 	}
 	to{
 		text-shadow:
-		-1px -1px 0px #f67855,
-		1px -1px 0px #f67855,
-		-1px 1px 0px #f67855,
-		1px 1px 0px #f67855,
-		1px 2px 0px #f67855,
-		2px 3px 0px #f67855,
-		3px 4px 0px #f67855,
-		4px 5px 0px #f67855
+		-1px -1px 0px #000000,
+		1px -1px 0px #000000,
+		-1px 1px 0px #000000,
+		1px 1px 0px #000000,
+		1px 2px 0px #000000,
+		2px 3px 0px #000000,
+		3px 4px 0px #000000,
+		4px 5px 0px #000000
 		;
 	}
 }

@@ -1,14 +1,8 @@
 fortuneBank = [
-    "กระเชอก้นรั่ว",
-    "เกลือเป็นหนอน",
-    "ไกลปืนเที่ยง",
-    "ขว้างงูไม่พ้นคอ",
-    "คลุมถุงชน",
-    "จับแพะชนแกะ",
-    "ชั่วช่างชี ดีช่างสงฆ์",
-    "ตกกะไดพลอยโจน",
-    "ติเรือทั้งโกลน",
-    "ตีปลาหน้าไซ"
+    "Jennie Kim เจนนี่ คิม",
+    "Rose โรเซ่",
+    "Kim Jisoo คิม จีซู",
+    "Lisa ลิซ่า"
 ]
 
 function play(){
@@ -19,7 +13,7 @@ function play(){
     }, 3000);
 }
 
-function play2(){
+function replay(){
     cookie2.classList.remove("cookie-hide");
     cookie2.classList.remove("cookie-show");
     fortune.style.opacity = 0;
@@ -29,7 +23,7 @@ function play2(){
     }, 10);
     setTimeout(function() {
         getFortune();
-    }, 3000);
+    }, 2000);
 }
 
 
