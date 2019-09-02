@@ -24,10 +24,10 @@
 
 		#howManyRainbowStripsDoYouWantHeu {
 			padding: 0.5em;
-			width: 2em;
+			width: 8em;
 			margin-bottom: 0.2em;
 			font-size: 2em;
-			border: 1px solid #eee;
+			border: 1px solid rgb(163, 163, 163);
 			border-radius: 0.1em;
 		}
 
@@ -41,10 +41,15 @@
 </head>
 
 <body>
-	<input type="number" id="howManyRainbowStripsDoYouWantHeu" min="0" max="999" value="6">
-	<button onclick="rainbowHaiDooNoy()">Go!!</button>
-	<button onclick="playAnimationHaiDooNoi()">Play!</button>
-	<button onclick="stopAnimationHaiDooNoi()">Stop!</button>
+	<center>
+		<br>
+		<input type="number" id="howManyRainbowStripsDoYouWantHeu" min="0" max="999" value="6">
+		<br>
+		<button onclick="rainbowHaiDooNoy()">Go!!</button>
+		<button onclick="playAnimationHaiDooNoi()">Play!</button>
+		<button onclick="stopAnimationHaiDooNoi()">Stop!</button>
+	</center>
+
 	<div id="rainbow">
 	</div>
 	<script type="text/javascript">
