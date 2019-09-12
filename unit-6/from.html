@@ -16,50 +16,59 @@
 
         <h2>ลงทะเบียนร่วมงาน</h2>
 
-        <!-- <input type="text" class="info" placeholder="รหัสนักศึกษา" required> -->
+        <input type="text" class="info_0" placeholder="รหัสนักศึกษา" required> 
 
-        <input type="text" class="info" placeholder="ชื่อ" required>
+        <input type="text" class="info_1" placeholder="ชื่อ" required>
 
-        <!-- <input type="text" class="info" placeholder="นามสกุล" required> -->
+        <input type="text" class="info_2" placeholder="นามสกุล" required>
 
         <button>ลงทะเบียน</button>
 
     </form>
 
     <br>
-    <hr><br>
+    <hr>
+    <br>
 
+    <h2>รายชื่อผู้ลงทะเบียน</h2>
     <table>
 
         <thead>
 
             <th>ลำดับที่</th>
 
-            <!-- <th>รหัสนักศึกษา</th> -->
+            <th>รหัสนักศึกษา</th>
 
             <th>ชื่อ</th>
 
-            <!-- <th>นามสกุล</th> -->
+            <th>นามสกุล</th>
 
         </thead>
 
         <tbody id="registerList">
 
-            <tr></tr>
-
         </tbody>
 
     </table>
-
+    <br>
     <script>
-        var i = 1;
+        let i = 1;
         function register() {
             // var info = document.getElementsByClassName("info")
-            var people = document.createElement("TR");
+            people = document.createElement("TR");
             // var registerList = document.getElementById("registerList");
-            people.innerHTML = `<td>${i}</td> <td>${document.querySelector('.info').value}</td>`;
-            register.appendChild(people);
-            document.querySelector('.info').value = "";
+            people.innerHTML = 
+            `<td>${i}</td> 
+            <td>${document.querySelector('.info_0').value}</td>
+            <td>${document.querySelector('.info_1').value}</td>
+            <td>${document.querySelector('.info_2').value}</td>
+            `;
+            registerList.appendChild(people);
+
+            document.querySelector('.info_0').value = "";
+            document.querySelector('.info_1').value = "";
+            document.querySelector('.info_2').value = "";
+            console.log(i);
             i++;
             return false; //ไม่ต้องการให้มันส่งค่าไป
 
