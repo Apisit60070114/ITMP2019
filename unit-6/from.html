@@ -11,21 +11,22 @@
 <body>
     <!-- ให้นักศึกษาทำแบบฟอร์ม รหัสนักศึกษา ชื่อ นามสกุล เมื่อกรอกแล้วจะไปลงตารางลงทะเบียนโดยต้องกรอกให้ครบทุกช่อง 
 	โดยจะมีหมายเลขลำดับไล่ไปเรื่อยๆ และให้ทำการเคลียร์ค่าของช่องอินพุทเมื่อลงทะเบียนไปแล้ว
-	-->
-    <form onsubmit="return register()">
+    -->
+    <center>
+        <form onsubmit="return register()">
 
-        <h2>ลงทะเบียนร่วมงาน</h2>
+            <h2>ลงทะเบียนร่วมงาน</h2>
 
-        <input type="text" class="info_0" placeholder="รหัสนักศึกษา" required> 
+            <input type="text" class="info_0" placeholder="รหัสนักศึกษา" required>
 
-        <input type="text" class="info_1" placeholder="ชื่อ" required>
+            <input type="text" class="info_1" placeholder="ชื่อ" required>
 
-        <input type="text" class="info_2" placeholder="นามสกุล" required>
+            <input type="text" class="info_2" placeholder="นามสกุล" required>
 
-        <button>ลงทะเบียน</button>
+            <button>ลงทะเบียน</button>
 
-    </form>
-
+        </form>
+    </center>
     <br>
     <hr>
     <br>
@@ -57,8 +58,8 @@
             // var info = document.getElementsByClassName("info")
             people = document.createElement("TR");
             // var registerList = document.getElementById("registerList");
-            people.innerHTML = 
-            `<td>${i}</td> 
+            people.innerHTML =
+                `<td>${i}</td> 
             <td>${document.querySelector('.info_0').value}</td>
             <td>${document.querySelector('.info_1').value}</td>
             <td>${document.querySelector('.info_2').value}</td>

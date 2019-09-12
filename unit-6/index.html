@@ -52,7 +52,6 @@
     .start{
         height: 100%;
         font-size: 1.5em;
-        font-family: sans-serif;
     }
 	.f0{
 		background-image: url('f0.png');
@@ -100,13 +99,16 @@
 </style>
 </head>
 <body>
+    <!-- แทบบน -->
     <div id ="bar">
             <button class="start" onclick="gameStart()">GAMESTART</button>
     </div>
+    <!-- พื้นที่เล่นเกม -->
 	<div id="wrap">
         <div id="char" x="0" y="4"></div>
         <div class="plan"></div>
-	</div>
+    </div>
+    <!-- ส่วนควบคุมซ้ายขวา -->
 	<div id="control">
 		<button class="cmd" onclick="moveChar(-1)"><</button>
 		<button class="cmd" onclick="moveChar(+1)">></button>
@@ -127,7 +129,7 @@
 			let f = document.createElement("div");
 			f.setAttribute("x", rand(5));
 			f.setAttribute("y", -1);
-			f.setAttribute("class","fruit f"+rand(2));
+			f.setAttribute("class","fruit f"+rand(3));
 			f.setAttribute("id","fruit_"+nowID);
 			wrap.appendChild(f);
 			nowID++;
