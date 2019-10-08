@@ -158,8 +158,8 @@
 		function bartop() {
 			let scroollnow = document.documentElement.scrollTop;
 			heightweb = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-			ppTnow = (scroollnow / heightweb) * 100;
-			topLine.style.width = `${ppTnow}%`;
+			ppT = (scroollnow / heightweb) * 100;
+			topLine.style.width = `${ppT}%`;
 		} window.addEventListener("scroll", bartop);
 
 	</script>
