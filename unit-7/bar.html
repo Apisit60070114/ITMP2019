@@ -60,7 +60,7 @@
 <body>
 	<div class="parent bg-smoke padding-l v-middle-flex">
 		<div class="to-center">
-			<h1>Welcome</h1>
+			<h1 id="welcome">Welcome</h1>
 			<p>Please scroll down</p>
 		</div>
 	</div>
@@ -140,20 +140,22 @@
 		}
 		window.addEventListener("scroll", ppp);
 
-		function subject() {
-			let classchart = document.getElementsByClassName('chart');
-			let ppS = paragraph.getBoundingClientRect();
-			console.log(ppS);
-			if (ppS.top < 1380 && ppS.bottom > 0) {
-				for (let i = 0; i < classchart.length; i++) {
-					classchart[i].classList.remove('close')
-				}
-			} else {
-				for (let i = 0; i < classchart.length; i++) {
-					classchart[i].classList.add('close')
-				}
+		function animationChart() {
+			let chart = document.getElementsByClassName('chart');
+			let ppR = paragraph.getBoundingClientRect();
+			let WWR = welcome.getBoundingClientRect();
+			if (ppR.top > window.innerHeight && WWR.top < 0) {
+				for (let i = 0; i < chart.length; i++) {
+			 		chart[i].classList.remove('close');
+			 	}
 			}
-		} window.addEventListener("scroll", subject);
+			else {
+				for (let i = 0; i < chart.length; i++) {
+			 		chart[i].classList.add('close');
+			 	}
+			}		
+		}
+		window.addEventListener("scroll", animationChart);
 
 		function bartop() {
 			let scroollnow = document.documentElement.scrollTop;
