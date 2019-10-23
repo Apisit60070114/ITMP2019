@@ -14,11 +14,12 @@
  * - #42628F -> Dark blue (link text)
  * - #7b96bc -> Medium-light blue (navigation and footer background)
  */
-body {
-	background: #f9f3e9;
-	color: #594846;
-	font: 100% "Adobe Caslon Pro", Georgia, "Times New Roman", serif;
-}
+ body {
+  background: #f9f3e9;
+  color: #594846;
+  font: 100% "Adobe Caslon Pro",
+  "Georgia", "Times New Roman", serif;
+  }
 a, a:visited {
   color: #42628F;
 }
@@ -133,20 +134,18 @@ max-width: 100%;
 
 
 /*Mobile*/
-@media screen and (max-width:480px) {
-
-body, .header, .footer, .navigation {
+@media screen and (max-width: 480px) {
+  body, .header, .footer, .navigation {
   width: 100%;
-}
-.column {
-  margin: 10px 0;
-border-bottom: 1px dashed #7b96bc;
-}
-.navigation ul li {
-width: 33.333333%;
-}
-
-#visit, #points, #main {
-width: 100%;
-}
+  }
+  .column {
+  margin: 1em 0;
+  border-bottom: 1px dashed #7b96bc;
+  }
+  .navigation ul li {
+  width: 33.333333%;
+  }
+  #visit, #points, #main {
+  width: 100%;
+  }
 }

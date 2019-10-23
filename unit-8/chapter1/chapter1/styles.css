@@ -2,8 +2,8 @@
 
 /* Reset */
 * {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 /**
@@ -14,22 +14,24 @@
  * - #42628F -> Dark blue (link text)
  * - #7b96bc -> Medium-light blue (navigation and footer background)
  */
-body {
-	background: #f9f3e9;
-	color: #594846;
-	font: "Adobe Caslon Pro", Georgia, "Times New Roman", serif;
-}
-a, a:visited {
-  color: #42628F;
+ body {
+  background: #f9f3e9;
+  color: #594846;
+  font: 100% "Adobe Caslon Pro",
+  "Georgia", "Times New Roman", serif;
+  }
+a,
+a:visited {
+  color: #42628f;
 }
 p {
   margin: 0.5em 0.25em;
 }
 h1 {
   font-size: 1.75em;
-	border: solid #594846;
-	border-width: 2px 0;
-	padding: 0.25em;
+  border: solid #594846;
+  border-width: 2px 0;
+  padding: 0.25em;
   text-align: center;
   font-variant: small-caps;
 }
@@ -53,7 +55,7 @@ dt {
   font-weight: bold;
 }
 .navigation {
-  background-color:#7b96bc;
+  background-color: #7b96bc;
   border-bottom: 2px solid #594846;
 }
 .navigation ul li {
@@ -71,7 +73,7 @@ dt {
   margin-left: -1000px;
 }
 #points ul {
-  list-style-image: url('images/point.png');
+  list-style-image: url("images/point.png");
   margin: 0.5em 0 1em 0.5em;
   padding-left: 1em;
 }
@@ -82,15 +84,20 @@ dt {
   background-color: #7b96bc;
   color: #f9f3e9;
   text-align: center;
-  padding: .5em 0;
+  padding: 0.5em 0;
   font-style: italic;
 }
 
 /* Structure */
-body, .header, .navigation, .footer {
+body,
+.header,
+.navigation,
+.footer {
   width: 960px;
 }
-.header, .navigation, .footer {
+.header,
+.navigation,
+.footer {
   clear: both;
 }
 .column {
@@ -103,7 +110,7 @@ body, .header, .navigation, .footer {
   width: 320px; /* 960/3 */
 }
 .header {
-  background:url(images/w.png) no-repeat;
+  background: url(images/w.png) no-repeat;
   height: 200px;
 }
 #visit {
@@ -117,4 +124,36 @@ body, .header, .navigation, .footer {
 #main {
   margin: 10px 260px 0 250px;
   width: 460px;
+}
+
+/* mobile */
+@media screen and (min-width: 481px) {
+  body,
+  .header,
+  .footer,
+  .navigation {
+    width: 100%;
+  }
+  .column {
+    margin: 10px 1.04166667% 0 0;
+  }
+  .navigation ul li {
+    width: 33.333333%;
+  }
+  #visit {
+    width: 25%;
+    float: left;
+  }
+  #points {
+    width: 25%;
+    float: right;
+  }
+  #main {
+    margin: 10px 27.0833333% 0 26.0416667%;
+  }
+  #main img.label {
+    width: 220px;
+    margin: 5px;
+    float: left;
+    }
 }

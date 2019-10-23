@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style type="text/css">
+        * {
+            transition: all .3s;
+        }
+
+        body {
+            margin: 0;
+            background: red;
+        }
+
+        #image {
+            width: 100%;
+            padding-top: 100%;
+            background-image: url(little1.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .container {
+            background: white;
+            width: calc(100%-32px);
+            padding: 1rem;
+            box-sizing: border-box;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+
+        @media (max-width:768px) {
+            body {
+                background: green;
+            }
+
+            #image {
+                background-image: url(little2.jpg);
+
+            }
+
+        }
+
+        @media (max-width:400px) {
+            body {
+                background: blue;
+            }
+
+            #image {
+                background-image: url(little3.jpg);
+
+            }
+        }
+    </style>
+    <title>My responsive</title>
+</head>
+
+<body>
+    <div id="mybox"></div>
+    <div id="image"></div>
+    <div class="container">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia aut, a perferendis cumque
+        veniam nulla vel ad eveniet nostrum optio iste id enim, ipsam tempora, praesentium est odio repellat recusandae?
+    </div>
+</body>
+
+</html>
